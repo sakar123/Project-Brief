@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@100&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes transitionIn{
+  from {
+    opacity:0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.m-f{
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+
+}
+
+
+body{
+
+  background-image: url(../images/home.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: relative;
+   color: white;
+}
+ul#menu li {
+  display:inline;
+  
+}
+ul#menu {
+  text-align: right;
+  padding-top: 5em;
+
+}
+li{
+
+  padding-right: 5em;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+
+}
+
+main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+a{
+  text-decoration:none;
+}
+a:link, a:visited {
+  color: white;
+}
+a:hover {
+  color: yellow;
+}
+.header{
+  height: 100vh;
+  color: #ffffff;
+  line-height: 50px;
+  animation: transitionIn 2s;
+}
+
+.header-content{
+  padding-top: 18vh;
+  text-align: center;
+}
+
+p.title{
+  position: absolute;
+  padding-left: 7em;
+  padding-top: 2.5em;
+  font-size: 2em;
+}
+
+.text2{
+  font-size: 5em;
+  padding-top: 20px;
+  padding-bottom: 45px;
+}
+.btn{
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  padding: 15px 35px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 15px;
+  transition: all 400ms ease-in-out;
+}
+
+.btn-fill{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-fill:hover{
+  background-color: #f1c11a;
+  border-color: transparent;
+}
+
+.btn-trans:hover{
+  background-color: #f1c11a;
+  color: #000000;
+  border-color: transparent;
+}
+@media only screen and  (max-width: 1024px){
+ p.title{
+  position: absolute;
+  padding-top: 0px;
+  align-content: center;
+  font-size: 2em;
+} 
+.text2{
+  font-size: 2em;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+}
